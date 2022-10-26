@@ -1,0 +1,250 @@
+header{
+    width: 100%;
+    margin: 70px auto;
+    border-bottom: 1px solid #eee;
+}
+header nav{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+}
+nav .logo{
+    width: 20%;
+}
+.logo img{
+    width: 100%;
+}
+nav button{
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    display: none;
+}
+nav .menu{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    width: 13%;
+    text-align: center;
+}
+.menu li a{
+    font-size: 1.7rem;
+}
+/* ㅡㅡㅡㅡmainㅡㅡㅡㅡ */
+main{
+    width:100%;
+}
+main article{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+article img{
+    width: 50%;
+}
+article .txt{
+    position: relative;
+    width: 48%;
+    margin: 0 auto;
+}
+.txt a:not(.not)::before{
+    content: '•';
+}
+.txt h1{
+    width: 100%;
+    font-size: 3rem;
+    position: absolute;
+    top: 20px;
+    text-transform: uppercase;
+}
+.txt h3{
+    width: 95%;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 100px;
+    text-transform: uppercase;
+}
+.txt p{
+    position: absolute;
+    bottom: 0;
+}
+
+section{
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+section h1{
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+section h3{
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+section .image{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+.image img{
+    width: 32.4%;
+}
+section .slide_wrap{
+    position: relative;
+    /* max-width: 1440px; */
+    height: 500px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.slide_wrap .slides{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    transition: left .5s ease-out;
+}
+.slides li:not(:first-child){
+    margin-left: 1%;
+}
+.slides img{
+    width: 100%;
+    border-radius: 30px;
+}
+.slides li:hover img{
+    opacity: 0.7;
+}
+.slide_wrap .prev{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.slide_wrap .next{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.slide_wrap .prev:hover,
+.slide_wrap .next:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.slide_wrap .slides p{
+    color: #aaa;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #111;
+    padding: 50px 0;
+}
+footer .footer_top{
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+}
+footer .footer_top::before{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+}
+.footer_top ul{
+    width: 100%;
+}
+.footer_top li a{
+    font-size: 1.5rem;
+    line-height: 70px;
+    font-weight: bold;
+    color: #eee;
+}
+footer .add{
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    color: #777;
+}
+.add ul{
+    position: absolute;
+    top: -190px;
+    right: 0;
+}
+.add li{
+    display: flex;
+    line-height: 30px;
+    font-size: 0.9rem;
+    text-align: right;
+}
+.add .point{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eee;
+}
+.add li:nth-of-type(3){
+    margin-top: 30px;
+}
+.add li:nth-of-type(4) p:not(:first-child){
+    margin-left: 50px;
+}
+footer .contain{
+    max-width: 1440px;
+    margin: auto;
+    color: #777;
+    margin-top: 100px;
+}
+.contain ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.contain li a{
+    line-height: 50px;
+    color: #eee;
+}
+.contain .point a{
+    color: rgb(255, 230, 0);
+}
+footer .footer_bottom{
+    max-width: 1440px;
+    margin: 20px auto;
+    color: #777;
+}
+.footer_bottom li{
+    line-height: 30px;
+    display: flex;
+}
+.footer_bottom li p:not(:first-child)::before{
+    content: '|';
+    font-weight: bold;
+    margin-left:15px;
+    margin-right: 15px;
+}
+footer .social{
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+}
+.social ul{
+    width: 15%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+}

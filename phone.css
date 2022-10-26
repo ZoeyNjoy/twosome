@@ -1,0 +1,196 @@
+header{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin: 200px auto 300px;
+    border-bottom: 0px;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+nav .menu{
+    display: unset;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    transition: .3s all;
+}
+.menu.visible{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu li{
+    width: 100%;
+    text-align: center;
+}
+nav li a{
+    font-size: 1.5rem;
+    line-height: 60px;
+    transition: opacity 0.2s;
+}
+nav li a:hover{
+    color: #d60037;
+}
+nav .logo{
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+.logo img{
+    width: 100%;
+}
+nav button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    top: 90px;
+    right: 0;
+}
+
+/* ㅡㅡㅡㅡmainㅡㅡㅡㅡ */
+main{
+    padding: 0 3%;
+    box-sizing: border-box;
+}
+main article{
+    width: 90%;
+    display: unset;
+    margin: auto;
+}
+article img{
+    width: 100%;
+}
+article .txt{
+    width: 90%;
+    height: 300px;
+}
+.txt a{
+    display: none;
+}
+.txt h1{
+    width: 100%;
+    top: -15%;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.txt h3{
+    top: 15%;
+    font-size: 1.2rem;
+}
+.txt p{
+    top: 40%;
+}
+
+
+section h1{
+    font-size: 1.8rem;
+}
+section .image{
+    display: inline;
+}
+.image img{
+    width: 100%;
+    margin-top: 30px;
+}
+.image img:not(:first-child){
+    margin-top: 70px;
+}
+section .slide_wrap{
+    height: 250px;
+}
+.slides li h3{
+    font-size: 1.2rem;    
+}
+.slide_wrap .slides p{
+    font-size: 0.9rem;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 3%;
+    box-sizing: border-box;
+}
+footer .footer_top::before{
+    display: none;
+}
+.footer_top ul{
+    display: unset;
+    justify-content: space-between;
+}
+.footer_top li a{
+    font-size: 1.2rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: #eee;
+}
+.add ul{
+    position: absolute;
+    top: 350px;
+    left: 0;
+}
+.add li{
+    line-height: 30px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+.add .point{
+    display: none;
+}
+.add li:nth-of-type(3){
+    margin-top: 30px;
+}
+footer .contain{
+    width: 100%;
+    margin-top: 30px;
+}
+.contain ul{
+    display: unset;
+    width: 100%;
+}
+footer .footer_bottom::before{
+    content: '';
+    display: block;
+    margin-top: 30%;
+}
+.footer_bottom li{
+    line-height: 30px;
+    display: unset;
+}
+.footer_bottom li p:not(:first-child)::before{
+    display: none;
+}
+footer .social{
+    max-width: 100%;
+}
+.social ul{
+    width: 30%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+}
