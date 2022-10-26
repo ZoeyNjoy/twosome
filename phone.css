@@ -2,28 +2,20 @@ header{
     position: relative;
     width: 100%;
     margin: 0;
-    margin: 200px auto 300px;
-    border-bottom: 0px;
-}
-header::before{
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #eee;
+    /* margin: 200px auto 300px; */
 }
 header nav{
-    position: fixed;
+    position: fixed ;
     top: 0;
     left: 0;
     width: 100%;
+    height: 200px;
     z-index: 100;
     background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 nav .menu{
-    display: unset;
+    display: block;
     position: absolute;
     top: 200px;
     width: 100%;
@@ -34,7 +26,7 @@ nav .menu{
     transition: .3s all;
 }
 .menu.visible{
-    height: 100%;
+    height: 100vh;
     opacity: 1;
     visibility: visible;
 }
@@ -79,6 +71,11 @@ main article{
     width: 90%;
     display: unset;
     margin: auto;
+}
+main article::before{
+    content: '';
+    display: block;
+    margin-top: 300px;
 }
 article img{
     width: 100%;
