@@ -2,14 +2,13 @@ header{
     position: relative;
     width: 100%;
     margin: 0;
-    /* margin: 200px auto 300px; */
 }
 header nav{
     position: fixed ;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 150px;
     z-index: 100;
     background-color: #fff;
     border-bottom: 1px solid #eee;
@@ -17,7 +16,8 @@ header nav{
 nav .menu{
     display: block;
     position: absolute;
-    top: 200px;
+    top: 150px;
+    padding-top: 30px;
     width: 100%;
     height: 0;
     opacity: 0;
@@ -36,7 +36,7 @@ nav .menu{
 }
 nav li a{
     font-size: 1.5rem;
-    line-height: 60px;
+    line-height: 70px;
     transition: opacity 0.2s;
 }
 nav li a:hover{
@@ -45,7 +45,7 @@ nav li a:hover{
 nav .logo{
     display: block;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
@@ -58,8 +58,8 @@ nav button{
     height: 50px;
     position: absolute;
     display: block;
-    top: 90px;
-    right: 0;
+    top: 50px;
+    right: 20px;
 }
 
 /* ㅡㅡㅡㅡmainㅡㅡㅡㅡ */
@@ -75,7 +75,7 @@ main article{
 main article::before{
     content: '';
     display: block;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 article img{
     width: 100%;
